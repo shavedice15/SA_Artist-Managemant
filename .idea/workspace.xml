@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6761ce1-372c-4fbf-960e-b76ff59caade" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ArtistController" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/controller/ArtistController">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerController" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/controller/CustomerController">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Angular(Client)/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/Angular(Client)/src/app/shared/quere.service.ts" />
+        <option value="$PROJECT_DIR$/Angular(Client)/src/app/artist-reservation/artist-reservation.component.ts" />
+        <option value="$PROJECT_DIR$/Angular(Client)/src/app/artist-reservation/artist-reservation.component.html" />
+        <option value="$PROJECT_DIR$/Angular(Client)/src/app/artist-reservation/artist-reservation.component.css" />
+        <option value="$PROJECT_DIR$/Angular(Client)/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Application.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/place.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/quere.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/Status.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/Quere.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/Place.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/TypeWork.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/Customer" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Repository/ArtistRepository" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Place.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Status.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Quere.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/TypeWork.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Customer" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Artist.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/ArtistRepository" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/CustomerRepository" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/Place.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/Quere.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/Status.java" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/TypeWorkRepository" />
+        <option value="$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/controller/ArtistController" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="189" />
+    <option name="y" value="60" />
+    <option name="width" value="1060" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sut" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sut" type="462c0819:PsiDirectoryNode" />
+              <item name="sa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sut" type="462c0819:PsiDirectoryNode" />
+              <item name="sa" type="462c0819:PsiDirectoryNode" />
+              <item name="g13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sut" type="462c0819:PsiDirectoryNode" />
+              <item name="sa" type="462c0819:PsiDirectoryNode" />
+              <item name="g13" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sut" type="462c0819:PsiDirectoryNode" />
+              <item name="sa" type="462c0819:PsiDirectoryNode" />
+              <item name="g13" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA_G13_Artist Managemant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA_G13_Artist Managemant" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot(Server)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sut" type="462c0819:PsiDirectoryNode" />
+              <item name="sa" type="462c0819:PsiDirectoryNode" />
+              <item name="g13" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringBoot(Server)" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BOSS\Downloads\SA_G13_Artist Managemant\SpringBoot(Server)\src\main\java\sut\sa\g13" />
+      <recent name="C:\Users\BOSS\Downloads\SA_G13_Artist Managemant\Angular(Client)\src\app\shared\quere" />
+      <recent name="C:\Users\BOSS\Downloads\SA_G13_Artist Managemant\Angular(Client)\src\app\login" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6761ce1-372c-4fbf-960e-b76ff59caade" name="Default" comment="" />
+      <created>1540573020766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540573020766</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32954547" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/shared/quere/quere.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/artist-reservation/artist-reservation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/artist-reservation/artist-reservation.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1459">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/artist-reservation/artist-reservation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular(Client)/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Entity/place">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/TypeWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Quere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Customer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Place.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/entity/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/ArtistRepository">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/CustomerRepository">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/PlaceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/QuereRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/TypeWorkRepository">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/repository/StatusRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/controller/ArtistController">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBoot(Server)/src/main/java/sut/sa/g13/controller/CustomerController">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

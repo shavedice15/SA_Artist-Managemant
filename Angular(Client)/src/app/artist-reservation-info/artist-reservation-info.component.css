@@ -1,0 +1,138 @@
+main {
+    padding: 20px;
+}
+
+.mat-bot {
+    background-color: #ffffcc;
+    color: black;
+    margin: 10px;
+    border-radius: 3px;
+    border: 3px solid #d9ccff;
+}
+
+.bott {
+padding-left: 120px;
+}
+
+.nametxt {
+color: black;
+}
+
+#box {
+background-color: white;
+color: black;
+width: 45%;
+height: 30px;
+border-radius: 3px;
+border: 2px solid #e6e6e6;
+text-align: center;
+}
+
+#box_area {
+background-color: white;
+color: black;
+width: 60%;
+height: 50px;
+border-radius: 3px;
+border: 2px solid #e6e6e6;
+}
+
+#box_time {
+background-color: white;
+color: black;
+width: 40px;
+height: 25px;
+border-radius: 3px;
+border: 2px solid #e6e6e6;
+text-align: center;
+}
+
+#box_date {
+background-color: white;
+color: black;
+width: 150px;
+height: 25px;
+border-radius: 3px;
+border: 2px solid #e6e6e6;
+text-align: center;
+}
+
+#box_select {
+background-color: gray;
+width: 75%;
+height: 30px;
+border-radius: 3px;
+border: 2px solid #e6e6e6;
+padding-top: 5px;
+}
+
+#box_name {
+color: black;
+width: 50%;
+height: 35px;
+border-radius: 3px;
+border: 3px solid #ccccff;
+margin-left: 20px;
+font-size: 17px;
+text-align: center;
+}
+
+.bg {
+  height: 600;
+  width: 100%;
+  background: url(src/pic/bg_colored.jpg);
+}
+
+.headtxt {
+margin: 10%;
+font-size:50px;
+color: white;
+}
+
+.head {
+width: 100%;
+height: 200px;
+background: url(src/pic/head_g.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.plan {
+width: 80%;
+height: 500px;
+text-align: left;
+float: center;
+color:black;
+margin: auto;
+padding: 20px;
+}
+
+.plan1 {
+width: 49.5%;
+height: 100%;
+text-align: left;
+float: left;
+color:black;
+background-color: #ffffe6;
+}
+
+.plan2 {
+width: 49.5%;
+height: 100%;
+text-align: center;
+float: right;
+color:black;
+background-color: #ffffe6;
+}
+
+.planin {
+width: 90%;
+height: 100%;
+text-align: left;
+float: left;
+color:black;
+margin:auto;
+padding: 20px
+}
+
+

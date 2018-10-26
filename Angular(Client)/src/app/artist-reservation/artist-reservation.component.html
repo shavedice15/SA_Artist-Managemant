@@ -1,0 +1,77 @@
+
+<div class="head">
+  <br><br>
+  <label class="headtxt">จองคิวศิลปิน</label>
+</div>
+
+<main>
+  <div class="plan">
+    <div class="plan1">
+      <div class="planin">
+        <div class="nametxt">
+          <label>ชื่อ-นามสกุล : </label>
+          <div id="box_name">
+            {{user.customerName}}
+          </div>
+        </div><br>
+
+        <label>ข้อมูลติดต่อกลับ</label><br>
+        <div class="planin">
+          <label>เบอร์โทรศัพท์ : </label><br>
+          <div id="box">
+            {{user.tel}}
+          </div>
+
+          <label>E-mail : </label><br>
+          <div id="box">
+            {{user.email}}
+          </div>
+
+          <br><br><br>
+          <div class="bott">
+            <button mat-raised-button (click)="save()" class="mat-bot" >ตกลง</button>
+            <button mat-raised-button class="mat-bot">ยกเลิก</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="plan2">
+      <div class="planin" style="text-align: center;">
+        <label>ประเภทงาน </label><br>
+        <mat-select placeholder=" " [(ngModel)]="quereSet.typeWorkSelect" name="typeWork" id="box_select">
+          <mat-option *ngFor="let typeWork of typeWorks" [value]="typeWork.typeworkId">
+            {{typeWork.typeWork}}
+          </mat-option>
+        </mat-select><br><br>
+
+        <label>สถานที่จัดงาน </label><br>
+        <textarea matInput name="place" id="box_area" [(ngModel)]="placeSet.place"></textarea><br><br>
+
+        <label>ศิลปินที่ต้องการ </label><br>
+        <mat-select placeholder=" " [(ngModel)]="quereSet.artistSelect" name="artistName" id="box_select">
+          <mat-option *ngFor="let artist of artists" [value]="artist.artistId">
+            {{artist.artistname}} ( {{artist.price}} บาท/ชั่วโมง )
+          </mat-option>
+        </mat-select><br><br>
+
+        <label>วันที่จัดงาน : </label>
+        <input matInput type="date" id="box_date" [(ngModel)]="placeSet.date"><br><br>
+
+        <label>เวลาเริ่ม : </label>
+        <input matInput type="number" min="0" max="24" maxlength="2" placeholder="hour" id="box_time" [(ngModel)]="placeSet.hrs" name="hrs"> :
+        <input matInput type="number" min="0" max="59" maxlength="2" placeholder="miniuse" id="box_time" [(ngModel)]="placeSet.mins" name="mins"> น.
+        <br><br>
+
+
+        <label>จำนวนชั่วโมง : </label>
+        <input matInput type="number" min="0" id="box_time" [(ngModel)]="placeSet.hour" name="hour"><br>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+

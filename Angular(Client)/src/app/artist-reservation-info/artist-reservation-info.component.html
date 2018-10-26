@@ -1,0 +1,66 @@
+<div class="head">
+  <br><br>
+  <label class="headtxt">ข้อมูลการจอง</label>
+</div>
+
+<main>
+  <div class="plan">
+    <div class="plan1">
+      <div class="planin">
+        <div class="nametxt">
+          <label>ชื่อ-นามสกุล : </label>
+          <div id="box_name">
+            {{user.customerName}}
+          </div>
+        </div><br>
+
+        <label>ข้อมูลติดต่อกลับ</label><br>
+        <div class="planin">
+          <label>เบอร์โทรศัพท์ : </label><br>
+          <div id="box">
+            {{user.tel}}
+          </div>
+
+          <label>E-mail : </label><br>
+          <div id="box">
+            {{user.email}}
+          </div>
+
+          <br><br><br>
+          <div class="bott">
+            <button mat-raised-button (click)="cancel()" class="mat-bot">ยกเลิกการจอง</button>
+            <button mat-raised-button class="mat-bot">กลับหน้าหลัก</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="plan2">
+      <div class="planin" style="text-align: center;">
+        <label>ประเภทงาน : {{typeWork.typeWork}}</label><br><br>
+
+        <label>สถานที่จัดงาน : </label><br>
+        {{place.place}}
+        <br><br>
+
+        <label>ศิลปินที่ต้องการ : </label><br>
+        {{artist.artistName}}
+        <br><br>
+
+        <label>วันที่จัดงาน : {{place.date}}</label>
+        <br><br>
+
+        <label>เวลาเริ่ม : {{place.time}}</label>
+        <br><br>
+
+        <label>จำนวนชั่วโมง : {{place.time}}</label>
+        <br>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
