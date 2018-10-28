@@ -19,7 +19,8 @@ public class DataLoader {
 
     @Bean
     ApplicationRunner init(ArtistRepository artistRepository, CustomerRepository customerRepository, PlaceRepository placeRepository,
-                           QuereRepository quereRepository, TypeWorkRepository typeWorkRepository, StatusRepository statusRepository) {
+                           QuereRepository quereRepository, TypeWorkRepository typeWorkRepository, StatusRepository statusRepository,
+                           ManagerRepository managerRepository, BandRepository bandRepository) {
         return args -> {
             Stream.of("งานแต่งงาน","งานปาร์ตี้","งานบวช","งานมหาวิทยาลัย","งานเลี้ยง","โรงแรม","ร้านอาหาร","อีเว้นท์ทั่วไป","งาน Event Grand Openning",
                     "งาน Event Pop-up Marget","งาน Event Venue/Mall","อื่นๆ").forEach(type -> {
@@ -38,12 +39,14 @@ public class DataLoader {
                 Customer customer = new Customer();
                 customer.setUsername(username);
                 if(username == "sawatdee"){
+                    customer.setPassword("12345");
                     customer.setCustomerName("saraban");
                     customer.setTel("0987654321");
                     customer.setEmail("sdf@gmail.com");
                     customerRepository.save(customer);
                 }
                 if(username == "kankan"){
+                    customer.setPassword("1");
                     customer.setCustomerName("kantana");
                     customer.setTel("0897687934");
                     customer.setEmail("qweqw@gmail.com");
@@ -52,19 +55,72 @@ public class DataLoader {
 
             });
 
-            Stream.of("SUT band", "SweetPop").forEach(artistname -> {
+            Stream.of("twit", "monny").forEach(username -> {
+                Manager manager = new Manager();
+                manager.setUsername(username);
+                if(username == "twit"){
+                    manager.setPassword("55555");
+                    manager.setManagerName("haruhi momo");
+                    manager.setTel("0988654321");
+                    manager.setEmail("wweqwe@gmail.com");
+                    managerRepository.save(manager);
+                }
+                if(username == "monny"){
+                    manager.setPassword("54321");
+                    manager.setManagerName("kanika nana");
+                    manager.setTel("0897007934");
+                    manager.setEmail("qwyyy@hotmail.com");
+                    managerRepository.save(manager);
+                }
+
+            });
+
+            Stream.of("SUT band", "SweetPop").forEach(bandname -> {
+                Band band = new Band();
+                band.setBandname(bandname);
+                if(bandname == "SUT band"){
+                    band.setPrice(100);
+                    band.setTypeMusic("Rock");
+                    bandRepository.save(band);
+                }
+                if(bandname == "SweetPop"){
+                    band.setPrice(120);
+                    band.setTypeMusic("Pop");
+                    bandRepository.save(band);
+                }
+            });
+
+            Stream.of("ttt aaa", "tata tete", "sasa nana", "tyni nani", "tana popo").forEach(artistname -> {
+                Long bandId1 = 1L;
+                Long bandId2 = 2L;
                 Artist artist = new Artist();
                 artist.setArtistname(artistname);
-                if(artistname == "SUT band"){
-                    artist.setPrice(100);
-                    artist.setTypeMusic("Rock");
+                if(artistname == "ttt aaa"){
+                    Band band = bandRepository.findByBandId(bandId1);
+                    artist.setBand(band);
                     artistRepository.save(artist);
                 }
-                if(artistname == "SweetPop"){
-                    artist.setPrice(120);
-                    artist.setTypeMusic("Pop");
+                if(artistname == "tata tete"){
+                    Band band = bandRepository.findByBandId(bandId1);
+                    artist.setBand(band);
                     artistRepository.save(artist);
                 }
+                if(artistname == "sasa nana"){
+                    Band band = bandRepository.findByBandId(bandId2);
+                    artist.setBand(band);
+                    artistRepository.save(artist);
+                }
+                if(artistname == "tyni nani"){
+                    Band band = bandRepository.findByBandId(bandId2);
+                    artist.setBand(band);
+                    artistRepository.save(artist);
+                }
+                if(artistname == "tana popo"){
+                    Band band = bandRepository.findByBandId(bandId2);
+                    artist.setBand(band);
+                    artistRepository.save(artist);
+                }
+
             });
 
             Stream.of("111 มหาวิทยาลัยเทคโนโลยีสุรนารี ถนนมหาวิทยาลัย ตำำบลสุรนารี อำเภอเมือง นครราชสีมา 3000").forEach(place -> {
@@ -72,7 +128,7 @@ public class DataLoader {
                 Quere quere = new Quere();
 
                 String username = "kankan";
-                Long artistId = 2L;
+                Long bandId = 2L;
                 Long typeworkId = 10L;
                 Long statusId = 1L;
 
@@ -84,7 +140,7 @@ public class DataLoader {
                 String mins="34";
                 Time t = new Time(Integer.parseInt(hrs),Integer.parseInt(mins),Integer.parseInt("00"));
 
-                Artist artistquere = artistRepository.findByArtistId(artistId);
+                Band bandquere = bandRepository.findByBandId(bandId);
                 Customer customerquere = customerRepository.findByUsername(username);
                 TypeWork choosetypework = typeWorkRepository.findByTypeworkId(typeworkId);
                 Status statusquere = statusRepository.findByStatusId(statusId);
@@ -97,7 +153,7 @@ public class DataLoader {
 
                 Place placequere = placeRepository.findByPlaceId(placeAdd.getPlaceId());
 
-                quere.setArtistQuere(artistquere);
+                quere.setBandQuere(bandquere);
                 quere.setCustomerQuere(customerquere);
                 quere.setPlaceQuere(placequere);
                 quere.setTypeworkQuere(choosetypework);
@@ -106,7 +162,9 @@ public class DataLoader {
             });
 
             customerRepository.findAll().forEach(System.out::println);
+            managerRepository.findAll().forEach(System.out::println);
             artistRepository.findAll().forEach(System.out::println);
+            bandRepository.findAll().forEach(System.out::println);
             typeWorkRepository.findAll().forEach(System.out::println);
             statusRepository.findAll().forEach(System.out::println);
             placeRepository.findAll().forEach(System.out::println);

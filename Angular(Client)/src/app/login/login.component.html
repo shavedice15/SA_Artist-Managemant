@@ -1,3 +1,31 @@
-<p>
-  login works!
-</p>
+
+<main>
+  <div class="plan">
+    <div class="plan1" style="text-align: center;">
+      <div class="planin">
+        <h1>Log in</h1>
+        <h2>สำหรับสมาชิก</h2>
+        <form>
+          <div class="example-container">
+            <label>USER NAME :</label><br>
+            <div class="box_mat">
+            <mat-form-field>
+              <input matInput [(ngModel)]="user.usernameCustomerLogin" name="username">
+            </mat-form-field></div><br><br>
+
+            <label>PASSWORD :</label><br>
+            <div class="box_mat">
+            <mat-form-field>
+              <input matInput type="password" [(ngModel)]="user.passwordCustomerLogin" name="password">
+            </mat-form-field></div>
+          </div><br><br>
+          <button mat-raised-button (click)="login()">Log in</button>
+          &nbsp;
+          <button mat-raised-button (click)="goBack()">Back</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+

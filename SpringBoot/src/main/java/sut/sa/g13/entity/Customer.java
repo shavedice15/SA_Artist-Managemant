@@ -23,6 +23,7 @@ public class Customer {
     private @NonNull  Long id;
 
     private @NonNull  String username;
+    private @NonNull String password;
     private @NonNull  String customerName;
     private  String email;
     private  String tel;

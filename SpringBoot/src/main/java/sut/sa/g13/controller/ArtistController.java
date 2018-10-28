@@ -1,9 +1,11 @@
 package sut.sa.g13.controller;
 
 import sut.sa.g13.entity.Artist;
+import sut.sa.g13.entity.Band;
 import sut.sa.g13.repository.ArtistRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import sut.sa.g13.repository.BandRepository;
 
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -12,6 +14,7 @@ import java.util.stream.Collectors;
 @RestController
 class ArtistController {
     @Autowired private final ArtistRepository artistRepository;
+    @Autowired private BandRepository bandRepository;
 
     ArtistController(ArtistRepository artistRepository){
         this.artistRepository = artistRepository;
@@ -23,12 +26,19 @@ class ArtistController {
                 .collect(Collectors.toList());
     }
 
-    @PostMapping("/Artist/add/{artistname}/{price}/{typeMusic}")
-    public Artist newArtist(@PathVariable String artistname,@PathVariable int price, @PathVariable String typeMusic){
+    @GetMapping("/Artist/{bandId}")
+    public Collection<Artist> artist(@PathVariable long bandId) {
+        Band band = bandRepository.findByBandId(bandId);
+        return artistRepository.findByBand(band).stream()
+                .collect(Collectors.toList());
+    }
+
+    @PostMapping("/Artist/add/{artistname}/{bandId}")
+    public Artist newArtist(@PathVariable String artistname,@PathVariable Long bandId){
+        Band band = bandRepository.findByBandId(bandId);
         Artist newArist = new Artist();
         newArist.setArtistname(artistname);
-        newArist.setPrice(price);
-        newArist.setTypeMusic(typeMusic);
+        newArist.setBand(band);
         return  artistRepository.save(newArist);
     }
 }

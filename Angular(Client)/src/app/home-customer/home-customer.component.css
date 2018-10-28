@@ -1,0 +1,19 @@
+main {
+ margin: auto;
+ font-family: Kanit, sans-serif;
+ background: url(src/pic/piano.jpg);
+ background-size: cover;
+ width: 100%;
+ height: 700px;
+}
+
+.plan {
+  text-align: center;
+}
+
+.planBot {
+  width: 500px;
+  height: 100px;
+}
+
+

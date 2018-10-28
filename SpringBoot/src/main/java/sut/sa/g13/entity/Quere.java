@@ -17,9 +17,9 @@ public class Quere {
     @Column(name="Quere_ID")
     private @NonNull Long id;
 
-    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Artist.class)
-    @JoinColumn(name = "AQ_ID", insertable = true)
-    private Artist artistQuere;
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Band.class)
+    @JoinColumn(name = "BQ_ID", insertable = true)
+    private Band bandQuere;
 
     @ManyToOne(fetch = FetchType.EAGER, targetEntity = Customer.class)
     @JoinColumn(name = "CQ_ID", insertable = true)

@@ -15,8 +15,8 @@ export class QuereService {
     return this.http.get(this.API + '/TypeWorks');
   }
 
-  getArtist(): Observable<any> {
-    return this.http.get(this.API + '/Artists');
+  getBand(): Observable<any> {
+    return this.http.get(this.API + '/Bands');
   }
 
   getStatus(): Observable<any> {
@@ -27,11 +27,11 @@ export class QuereService {
     return this.http.get(this.API + '/Places');
   }
 
-  getUser(username): Observable<any> {
+  getCustomer(username): Observable<any> {
     return this.http.get(this.API + '/Customer/user/' + username);
   }
 
-  getQueres(): Observable<any> {
-    return this.http.get(this.API + '/Queres');
+  getQueres(quereId): Observable<any> {
+    return this.http.get(this.API + '/Quere/' + quereId);
   }
 }

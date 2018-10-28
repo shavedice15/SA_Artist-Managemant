@@ -30,7 +30,7 @@
           <br><br><br>
           <div class="bott">
             <button mat-raised-button (click)="save()" class="mat-bot" >ตกลง</button>
-            <button mat-raised-button class="mat-bot">ยกเลิก</button>
+            <button mat-raised-button (click)="back()" class="mat-bot">กลับ</button>
           </div>
         </div>
 
@@ -50,9 +50,9 @@
         <textarea matInput name="place" id="box_area" [(ngModel)]="placeSet.place"></textarea><br><br>
 
         <label>ศิลปินที่ต้องการ </label><br>
-        <mat-select placeholder=" " [(ngModel)]="quereSet.artistSelect" name="artistName" id="box_select">
-          <mat-option *ngFor="let artist of artists" [value]="artist.artistId">
-            {{artist.artistname}} ( {{artist.price}} บาท/ชั่วโมง )
+        <mat-select placeholder=" " [(ngModel)]="quereSet.bandSelect" name="bandName" id="box_select">
+          <mat-option *ngFor="let band of bands" [value]="band.bandId">
+            {{band.bandname}} ( {{band.price}} บาท/ชั่วโมง )
           </mat-option>
         </mat-select><br><br>
 

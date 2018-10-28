@@ -2,12 +2,7 @@ package sut.sa.g13.entity;
 
 import lombok.*;
 
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -23,6 +18,8 @@ public class Artist {
     private @NonNull Long artistId;
 
     private @NonNull String artistname;
-    private @NonNull int price;
-    private @NonNull String typeMusic;
+
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Band.class)
+    @JoinColumn(name = "AB_ID", insertable = true)
+    private Band band;
 }

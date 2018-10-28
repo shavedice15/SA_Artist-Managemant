@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @RestController
 class QuereController {
     @Autowired private final QuereRepository quereRepository;
-    @Autowired private ArtistRepository artistRepository;
+    @Autowired private BandRepository bandRepository;
     @Autowired private CustomerRepository customerRepository;
     @Autowired private PlaceRepository placeRepository;
     @Autowired private TypeWorkRepository typeWorkRepository;
@@ -30,32 +30,32 @@ class QuereController {
                 .collect(Collectors.toList());
     }
 
-    @GetMapping("/Quere/{quereId}")
-    public Optional<Quere> View(@PathVariable Long quereId) {
-        Optional<Quere> Q = quereRepository.findById(quereId);
+    @GetMapping("/Quere/{id}")
+    public Optional<Quere> View(@PathVariable Long id) {
+        Optional<Quere> Q = quereRepository.findById(id);
         return Q;
     }
 
-    @PutMapping("/Quere/cancel/{quereId}")
+    @PostMapping("/Quere/cancel/{quereId}")
     public Quere updateQuere(Quere quere, @PathVariable long quereId) {
         Long statusId = 3L;
         Status status = statusRepository.findByStatusId(statusId);
         quere = quereRepository.findById(quereId);
         quere.setStatusQuere(status);
-        return quere;
+        return quereRepository.save(quere);
     }
 
-    @PostMapping("/Quere/{artistId}/{username}/{typeworkId}/{placeId}")
-    public Quere newQuere(Quere newQuere,@PathVariable Long artistId,@PathVariable String username, @PathVariable Long typeworkId,
+    @PostMapping("/Quere/{bandId}/{username}/{typeworkId}/{placeId}")
+    public Quere newQuere(Quere newQuere,@PathVariable Long bandId,@PathVariable String username, @PathVariable Long typeworkId,
                           @PathVariable Long placeId) {
         Long statusId = 1L;
         Customer customer = customerRepository.findByUsername(username);
-        Artist artist = artistRepository.findByArtistId(artistId);
+        Band band = bandRepository.findByBandId(bandId);
         Place place = placeRepository.findByPlaceId(placeId);
         TypeWork typeWork = typeWorkRepository.findByTypeworkId(typeworkId);
         Status status = statusRepository.findByStatusId(statusId);
 
-        newQuere.setArtistQuere(artist);
+        newQuere.setBandQuere(band);
         newQuere.setCustomerQuere(customer);
         newQuere.setPlaceQuere(place);
         newQuere.setTypeworkQuere(typeWork);

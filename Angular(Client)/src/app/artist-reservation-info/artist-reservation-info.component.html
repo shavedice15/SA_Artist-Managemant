@@ -29,7 +29,7 @@
           <br><br><br>
           <div class="bott">
             <button mat-raised-button (click)="cancel()" class="mat-bot">ยกเลิกการจอง</button>
-            <button mat-raised-button class="mat-bot">กลับหน้าหลัก</button>
+            <button mat-raised-button (click)="back()" class="mat-bot">กลับหน้าหลัก</button>
           </div>
         </div>
 
@@ -37,24 +37,28 @@
     </div>
 
     <div class="plan2">
-      <div class="planin" style="text-align: center;">
-        <label>ประเภทงาน : {{typeWork.typeWork}}</label><br><br>
+      <div class="planin" style="text-align: center;" >
+        <label>ประเภทงาน : {{queres.typeworkQuere.typeWork}}</label><br><br>
 
         <label>สถานที่จัดงาน : </label><br>
-        {{place.place}}
+        {{queres.placeQuere.place}}
         <br><br>
 
         <label>ศิลปินที่ต้องการ : </label><br>
-        {{artist.artistName}}
+        {{queres.bandQuere.bandname}}
+        <span *ngFor="let artist of arists">{{artist}}</span>
         <br><br>
 
-        <label>วันที่จัดงาน : {{place.date}}</label>
+        <label>วันที่จัดงาน : {{queres.placeQuere.date}}</label>
         <br><br>
 
-        <label>เวลาเริ่ม : {{place.time}}</label>
+        <label>เวลาเริ่ม : {{queres.placeQuere.time}}</label>
         <br><br>
 
-        <label>จำนวนชั่วโมง : {{place.time}}</label>
+        <label>จำนวนชั่วโมง : {{queres.placeQuere.hour}}</label>
+        <br><br>
+
+        <label>สถานะการจอง : {{queres.statusQuere.statusQuere}}</label>
         <br>
 
       </div>

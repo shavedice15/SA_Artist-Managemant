@@ -5,11 +5,8 @@ import sut.sa.g13.entity.Customer;
 import sut.sa.g13.repository.CustomerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.Collection;
 import java.util.stream.Collectors;
-
-import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -27,10 +24,9 @@ class CustomerController {
     }
 
     @GetMapping("/Customer/user/{username}")
-    public Optional<Customer> Customers (@PathVariable String username) {
-        Customer findCus = customerRepository.findByUsername(username);
-        Optional<Customer> C = customerRepository.findById(findCus.getId());
-        return C;
+    public Customer Customers (@PathVariable String username) {
+        Customer findCustomer = customerRepository.findByUsername(username);
+        return findCustomer;
     }
 
     @PostMapping("/Customer/add/{username}/{customerName}/{tel}/{email}")

@@ -10,25 +10,27 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ArtistReservationComponent } from './artist-reservation/artist-reservation.component';
 import { ArtistReservationInfoComponent } from './artist-reservation-info/artist-reservation-info.component';
-
+import { HomeComponent } from './home/home.component';
 import { QuereService } from './shared/quere/quere.service';
-
+import { LoginService } from './shared/login/login.service';
 import { MatSelectModule } from '@angular/material/select';
 
-const appRoutes: Routes = [
-  {path: '',  redirectTo: '/artistReserv', pathMatch: 'full'},
-  {path: 'login', component: LoginComponent},
-//  {path: 'menu', component: MenuComponent},
-  {path: 'artistReserv', component:  ArtistReservationComponent},
-  {path: 'artistReservInfo', component:  ArtistReservationInfoComponent},
-];
+import { RoutingMainModule } from "./routing-main/routing-main.module";
+import { HomeCustomerComponent } from './home-customer/home-customer.component';
+import { LoginManagerComponent } from './login-manager/login-manager.component';
+import { HomeManagerComponent } from './home-manager/home-manager.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ArtistReservationComponent,
-    ArtistReservationInfoComponent
+    ArtistReservationInfoComponent,
+    HomeComponent,
+    HomeCustomerComponent,
+    LoginManagerComponent,
+    HomeManagerComponent
   ],
   imports: [
     BrowserModule,
@@ -40,10 +42,10 @@ const appRoutes: Routes = [
     MatListModule,
     MatToolbarModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes),
-    MatSelectModule
+    MatSelectModule,
+    RoutingMainModule
   ],
-  providers: [QuereService],
+  providers: [QuereService,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

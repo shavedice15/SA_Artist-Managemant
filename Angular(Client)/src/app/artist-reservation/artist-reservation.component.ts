@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuereService } from '../shared/quere/quere.service';
+import { LoginService } from '../shared/login/login.service';
 import {Router} from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient} from '@angular/common/http';
@@ -10,10 +11,9 @@ import { HttpClient} from '@angular/common/http';
   styleUrls: ['./artist-reservation.component.css']
 })
 export class ArtistReservationComponent implements OnInit {
-
-  artists: Array<any>;
+  private customer :any;
+  bands: Array<any>;
   typeWorks: Array<any>;
-  private username = 'kankan';
   user: any = {
     id : '',
     username : '',
@@ -23,7 +23,7 @@ export class ArtistReservationComponent implements OnInit {
   };
 
   quereSet: any = {
-    artistSelect : '',
+    bandSelect : '',
     typeWorkSelect : ''
   }
   placeSet: any = {
@@ -34,13 +34,28 @@ export class ArtistReservationComponent implements OnInit {
     hrs : '',
     mins : ''
   }
+  Quere: any= {
+    id: '',
+    artistQuere: {},
+    customerQuere: {},
+    placeQuere: {},
+    typeworkQuere: {},
+    statusQuere: {}
+  }
 
-  constructor(private quereService:QuereService, private httpClient: HttpClient, private router: Router, private rout: ActivatedRoute) { }
+
+  constructor(private quereService:QuereService, private httpClient: HttpClient, private router: Router, private rout: ActivatedRoute,
+    private loginService:LoginService) { }
 
   ngOnInit() {
-    this.quereService.getArtist().subscribe(data => {
-      this.artists = data;
-      console.log(this.artists);
+    this.rout.params.subscribe(prams=>{
+        this.customer = prams
+        console.log(prams)
+    })
+
+    this.quereService.getBand().subscribe(data => {
+      this.bands = data;
+      console.log(this.bands);
     });
 
     this.quereService.getTypeWork().subscribe(data => {
@@ -48,7 +63,7 @@ export class ArtistReservationComponent implements OnInit {
       console.log(this.typeWorks);
     });
 
-    this.quereService.getUser(this.username).subscribe(data => {
+    this.quereService.getCustomer(this.customer.username).subscribe(data => {
       this.user = data;
       console.log(this.user);
     });
@@ -56,7 +71,7 @@ export class ArtistReservationComponent implements OnInit {
 
   save() {
 
-    if (this.quereSet.artistSelect === '' || this.quereSet.typeWorkSelect === '' || this.placeSet.place === '' || this.placeSet.date === '' ||
+    if (this.quereSet.bandSelect === '' || this.quereSet.typeWorkSelect === '' || this.placeSet.place === '' || this.placeSet.date === '' ||
     this.placeSet.hour === '' || this.placeSet.hrs === '' || this.placeSet.mins === '') {
         alert('กรุณากรอกข้อมูลให้ครบถ้วน');
     }else {
@@ -69,13 +84,16 @@ export class ArtistReservationComponent implements OnInit {
           console.log('PUT Request is successful', data);
 
           if(data){
-            this.httpClient.post('http://localhost:8080/Quere/' + this.quereSet.artistSelect + '/' + this.user.username + '/' +
+            this.httpClient.post('http://localhost:8080/Quere/' + this.quereSet.bandSelect + '/' + this.user.username + '/' +
             this.quereSet.typeWorkSelect + '/' + this.placeSet.placeId,this.quereSet)
             .subscribe(
               data => {
                 alert('การจองสำเร็จ');
+                this.Quere = data;
                 console.log('PUT Request is successful', data);
-                this.router.navigate(['artistReservInfo']);
+                if(data){
+                  this.router.navigate(['artistReservInfo/' + this.customer.username,{username:this.customer.username, quereId:this.Quere.id}]);
+                }
               },
               error => {
                 console.log('Error', error);
@@ -92,4 +110,7 @@ export class ArtistReservationComponent implements OnInit {
 
   }
 
+  back(){
+    this.router.navigate(['member/' + this.customer.username,{username:this.customer.username}]);
+  }
 }
