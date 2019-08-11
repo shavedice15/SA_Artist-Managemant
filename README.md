@@ -1,2 +1,2 @@
-# SA_Artist-Managemant
+# Artist Managemant System
 Spring Boot + Angular6 (Reservation Artist System)
